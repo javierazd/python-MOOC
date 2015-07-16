@@ -1,0 +1,16 @@
+# python-MOOC
+
+s='carro'
+largo=s[0]
+acumulador=s[0]
+for i in range(0,len(s)):
+    if acumulador[len(acumulador)-1]<=s[i]:
+        acumulador=acumulador+s[i]
+    else:
+        if len(largo)<len(acumulador):
+            largo=acumulador
+        acumulador=s[i]
+if len(largo)<len(acumulador):
+    largo = acumulador
+print largo
+print acumulador
