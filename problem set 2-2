@@ -1,0 +1,11 @@
+# python-MOOC
+
+contador=0
+rep=0
+s='sadsabobwqelkbob'
+for i in range(0,len(s)-2):
+    if s[contador]=='b' and s[contador+1]=='o' and s[contador+2]=='b' and contador<=len(s)-3:
+        rep=rep+1
+    contador=contador+1
+    i=i+1
+print rep
